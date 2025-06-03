@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advice Generator</title>
+    <title>Bible Verse Generator</title>
     <link rel="icon" type="image/png" href="/Tise-Tiwa logo.png" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -54,6 +54,21 @@
         alt=""
         class="mx-auto my-9 hidden sm:block"
       />
+
+      <div class="flex justify-center mb-4">
+        <input
+          type="text"
+          id="verseInput"
+          placeholder="Search Specific verse"
+          class="px-3 py-2 rounded-l border border-gray-300 focus:outline-none"
+        />
+        <button
+          id="searchBtn"
+          class="px-4 py-2 bg-[var(--Green-300)] text-white rounded-r font-bold"
+        >
+          Search
+        </button>
+      </div>
 
       <div
         class="w-[60px] h-[60px] bg-[var(--Green-300)] flex justify-center items-center rounded-full absolute bottom-[-30px] left-[41.5%] right-[41.5%] sm:left-[44.5%] sm:right-[44.5%] cursor-pointer hover:shadow-[0_0_30px_var(--Green-300)] glow"
