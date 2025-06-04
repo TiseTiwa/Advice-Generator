@@ -62,6 +62,13 @@ searchBtn.addEventListener("click", async () => {
   loading.classList.add("hidden");
 });
 
+// Trigger search on Enter key
+verseInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    searchBtn.click();
+  }
+});
+
 function formatVerseInput(input) {
   // Insert a space before the first digit (chapter number)
   return input.replace(/([a-zA-Z])(\d)/, '$1 $2');
